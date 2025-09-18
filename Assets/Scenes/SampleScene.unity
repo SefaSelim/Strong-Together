@@ -500,7 +500,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161407561}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46da3b0d644cc3948a1845bd39ff47d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 10
 --- !u!1 &194142401
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,7 +642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &194142404
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -996,7 +996,7 @@ ConfigurableJoint:
   m_AngularYMotion: 1
   m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 0
+    spring: 10000
     damper: 0
   m_LinearLimit:
     limit: 0
@@ -1493,7 +1493,7 @@ ConfigurableJoint:
   m_AngularYMotion: 1
   m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 0
+    spring: 10000
     damper: 0
   m_LinearLimit:
     limit: 0
@@ -1908,7 +1908,7 @@ ConfigurableJoint:
   m_AngularYMotion: 1
   m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 0
+    spring: 10000
     damper: 0
   m_LinearLimit:
     limit: 0
@@ -2323,7 +2323,7 @@ ConfigurableJoint:
   m_AngularYMotion: 1
   m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 0
+    spring: 10000
     damper: 0
   m_LinearLimit:
     limit: 0
@@ -2611,7 +2611,7 @@ ConfigurableJoint:
   m_AngularYMotion: 1
   m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 0
+    spring: 10000
     damper: 0
   m_LinearLimit:
     limit: 0
@@ -3134,7 +3134,7 @@ ConfigurableJoint:
   m_AngularYMotion: 1
   m_AngularZMotion: 1
   m_LinearLimitSpring:
-    spring: 0
+    spring: 10000
     damper: 0
   m_LinearLimit:
     limit: 0
