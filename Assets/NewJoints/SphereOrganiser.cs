@@ -25,48 +25,80 @@ public class CircleSpringSpawner3D_XY_Runtime : MonoBehaviour
     private List<GameObject> spawnedSpheres = new List<GameObject>();
     private int lastSpawnCount = 0;
 
+    // --- YENİ: Sadece spawn noktası için canlı merkez ---
+    private Vector3 currentSpawnCenter;
+
+    void Awake()
+    {
+        // başlangıçta verdiğin merkez ne ise onu al
+        currentSpawnCenter = centerObject != null ? centerObject.position : transform.position;
+    }
+
     void Update()
     {
+        // Top sayısı değiştiyse yeniden kur (MERKEZİ O ANKİ KONUMA GÖRE!)
         if (numberOfSpheres != lastSpawnCount)
         {
             RebuildSpheres();
             lastSpawnCount = numberOfSpheres;
         }
+
+        // --- YENİ: Sadece spawn merkezi için topların anlık ortalamasını kaydet ---
+        if (spawnedSpheres.Count > 0)
+        {
+            Vector3 sum = Vector3.zero;
+            int c = 0;
+            foreach (var s in spawnedSpheres)
+            {
+                if (s == null) continue;
+                sum += s.transform.position;
+                c++;
+            }
+            if (c > 0)
+                currentSpawnCenter = sum / c; // SADECE sonraki respawn için kullanıyoruz
+        }
     }
     
     void FixedUpdate()
     {
-        // A veya D basılıysa tüm toplara kuvvet uygula
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
         {
-            float dir = Input.GetKey(KeyCode.A) ? 1f : -1f; // A = sola, D = sağa
+            float dir = Input.GetKey(KeyCode.A) ? 1f : -1f;
 
             foreach (var sphere in spawnedSpheres)
             {
                 if (sphere == null) continue;
                 Rigidbody rb = sphere.GetComponent<Rigidbody>();
 
-                // Merkezden bu topa olan yön
                 Vector3 normal = (sphere.transform.position - (centerObject != null ? centerObject.position : transform.position)).normalized;
-
-                // Normale dik (tangent) vektör → XY düzleminde
                 Vector3 tangent = Vector3.Cross(Vector3.forward, normal).normalized;
-
-                // Kuvvet uygula
-
 
                 if (rb.angularVelocity.magnitude < 10f)
                 { 
                     rb.AddForce(tangent * shiftForce * dir, ForceMode.Force);
                 }
-                rb.AddForce(- lineerForce * dir * Vector3.right, ForceMode.Force); // Z yönünde hafif kuvvet
+                rb.AddForce(- lineerForce * dir * Vector3.right, ForceMode.Force);
             }
         }
     }
 
-
     void RebuildSpheres()
     {
+        // --- YENİ: Silmeden önce o anki topların ortasını spawn merkezi olarak kaydet ---
+        if (spawnedSpheres.Count > 0)
+        {
+            Vector3 sum = Vector3.zero;
+            int c = 0;
+            foreach (var s in spawnedSpheres)
+            {
+                if (s == null) continue;
+                sum += s.transform.position;
+                c++;
+            }
+            if (c > 0)
+                currentSpawnCenter = sum / c;
+        }
+
         foreach (var s in spawnedSpheres)
         {
             if (s != null)
@@ -74,20 +106,21 @@ public class CircleSpringSpawner3D_XY_Runtime : MonoBehaviour
         }
         spawnedSpheres.Clear();
 
-        SpawnSpheres();
-        ConnectSpheresWithSprings();
+        SpawnSpheres();              // <-- artık currentSpawnCenter etrafında spawn eder
+        ConnectSpheresWithSprings(); // aynı
     }
 
     void SpawnSpheres()
     {
-        float centerZ = transform.position.z;
+        // --- ESKİ: transform.position yerine sadece spawn merkezi değişti ---
+        float centerZ = currentSpawnCenter.z;
 
         for (int i = 0; i < numberOfSpheres; i++)
         {
             float angle = i * Mathf.PI * 2 / numberOfSpheres;
             Vector3 pos = new Vector3(
-                Mathf.Cos(angle) * radius + transform.position.x,
-                Mathf.Sin(angle) * radius + transform.position.y,
+                Mathf.Cos(angle) * radius + currentSpawnCenter.x,
+                Mathf.Sin(angle) * radius + currentSpawnCenter.y,
                 centerZ
             );
 
@@ -105,26 +138,36 @@ public class CircleSpringSpawner3D_XY_Runtime : MonoBehaviour
 
             spawnedSpheres.Add(sphere);
         }
+
+        // --- YENİ: Spawn sonrası bir kez daha ortalamayı alıp kayıt (opsiyonel ama tutarlı) ---
+        if (spawnedSpheres.Count > 0)
+        {
+            Vector3 sum = Vector3.zero;
+            int c = 0;
+            foreach (var s in spawnedSpheres)
+            {
+                if (s == null) continue;
+                sum += s.transform.position;
+                c++;
+            }
+            if (c > 0)
+                currentSpawnCenter = sum / c;
+        }
     }
 
-    // Değişiklik burada
+    // Değiştirilmedi
     void ConnectSpheresWithSprings()
     {
         for (int i = 0; i < spawnedSpheres.Count; i++)
         {
-            // i. küreyi al
             Rigidbody rbA = spawnedSpheres[i].GetComponent<Rigidbody>();
             
-            // i. küreyi, kendisi dışındaki diğer tüm kürelere bağla
             for (int j = 0; j < spawnedSpheres.Count; j++)
             {
-                if (i == j) // Eğer aynı küreyse, atla
-                    continue;
+                if (i == j) continue;
 
-                // j. küreyi al
                 Rigidbody rbB = spawnedSpheres[j].GetComponent<Rigidbody>();
 
-                // Bağlantının zaten var olup olmadığını kontrol et
                 bool connectionExists = false;
                 SpringJoint[] joints = spawnedSpheres[i].GetComponents<SpringJoint>();
                 foreach (var joint in joints)
@@ -140,7 +183,6 @@ public class CircleSpringSpawner3D_XY_Runtime : MonoBehaviour
                 {
                     SpringJoint sj = spawnedSpheres[i].AddComponent<SpringJoint>();
                     sj.connectedBody = rbB;
-                    //sj.autoConfigureConnectedAnchor = false; // El ile ayarlanacağı için false yapıldı
                     sj.anchor = Vector3.zero;
                     sj.connectedAnchor = Vector3.zero;
                     sj.spring = spring;

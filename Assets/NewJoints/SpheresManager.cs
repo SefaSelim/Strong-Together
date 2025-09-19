@@ -8,6 +8,7 @@ public class SpheresManager : MonoBehaviour
     
     
     private CircleSpringSpawner3D_XY_Runtime spawner;
+    public bool isGrounded = false; 
     public List<GameObject> Spheres => spawner.GetListOfSpheres();
     
     

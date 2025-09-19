@@ -9,6 +9,7 @@ public class ForceOutDirection : MonoBehaviour
     [SerializeField] private float impulseMagnitude = 5f;
     [SerializeField] private float jumpMagnitude = 1f;
     
+
     
     Rigidbody rb;
 
@@ -26,7 +27,15 @@ public class ForceOutDirection : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))// isgroundedken calisacak
+        if(Physics.gravity.y > 0)
+        {
+            jumpMagnitude = Mathf.Abs(jumpMagnitude) * -1;
+        }
+        else
+        {
+            jumpMagnitude = Mathf.Abs(jumpMagnitude);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && SpheresManager.Instance.isGrounded)// isgroundedken calisacak
         {
             Vector3 direction = (transform.position - CenterPoint.position).normalized;
             rb.AddForce(direction * impulseMagnitude, ForceMode.Impulse);
