@@ -17,6 +17,10 @@ public class CircleSpringSpawner3D_XY_Runtime : MonoBehaviour
     [Header("Limit Distance")]
     public Transform centerObject;
     public float maxDistanceToCenter = 1f;
+    
+    [Header("Oteleme Kuvveti")]
+    public float shiftForce = 30f;
+    public float lineerForce = 1f;
 
     private List<GameObject> spawnedSpheres = new List<GameObject>();
     private int lastSpawnCount = 0;
@@ -29,6 +33,37 @@ public class CircleSpringSpawner3D_XY_Runtime : MonoBehaviour
             lastSpawnCount = numberOfSpheres;
         }
     }
+    
+    void FixedUpdate()
+    {
+        // A veya D basılıysa tüm toplara kuvvet uygula
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
+            float dir = Input.GetKey(KeyCode.A) ? 1f : -1f; // A = sola, D = sağa
+
+            foreach (var sphere in spawnedSpheres)
+            {
+                if (sphere == null) continue;
+                Rigidbody rb = sphere.GetComponent<Rigidbody>();
+
+                // Merkezden bu topa olan yön
+                Vector3 normal = (sphere.transform.position - (centerObject != null ? centerObject.position : transform.position)).normalized;
+
+                // Normale dik (tangent) vektör → XY düzleminde
+                Vector3 tangent = Vector3.Cross(Vector3.forward, normal).normalized;
+
+                // Kuvvet uygula
+
+
+                if (rb.angularVelocity.magnitude < 10f)
+                { 
+                    rb.AddForce(tangent * shiftForce * dir, ForceMode.Force);
+                }
+                rb.AddForce(- lineerForce * dir * Vector3.right, ForceMode.Force); // Z yönünde hafif kuvvet
+            }
+        }
+    }
+
 
     void RebuildSpheres()
     {

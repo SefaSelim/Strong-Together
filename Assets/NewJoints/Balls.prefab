@@ -151,3 +151,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CenterPoint: {fileID: 0}
   forceMagnitude: 300
+  impulseMagnitude: 100
+  jumpMagnitude: 10

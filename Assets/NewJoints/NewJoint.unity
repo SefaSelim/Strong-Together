@@ -401,6 +401,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CenterPoint: {fileID: 1908927576}
   forceMagnitude: 600
+  impulseMagnitude: 5
+  jumpMagnitude: 1
 --- !u!114 &24528946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,6 +957,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CenterPoint: {fileID: 1908927576}
   forceMagnitude: 600
+  impulseMagnitude: 5
+  jumpMagnitude: 1
 --- !u!114 &570010537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,6 +1008,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CenterPoint: {fileID: 1253650891}
   forceMagnitude: 80
+  impulseMagnitude: 5
+  jumpMagnitude: 1
 --- !u!54 &700621329
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1402,6 +1408,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CenterPoint: {fileID: 1908927576}
   forceMagnitude: 600
+  impulseMagnitude: 5
+  jumpMagnitude: 1
 --- !u!114 &747860558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1792,6 +1800,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CenterPoint: {fileID: 1908927576}
   forceMagnitude: 600
+  impulseMagnitude: 5
+  jumpMagnitude: 1
 --- !u!114 &1430870523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2196,6 +2206,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CenterPoint: {fileID: 1908927576}
   forceMagnitude: 600
+  impulseMagnitude: 5
+  jumpMagnitude: 1
 --- !u!114 &1682460146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2492,6 +2504,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CenterPoint: {fileID: 1908927576}
   forceMagnitude: 600
+  impulseMagnitude: 5
+  jumpMagnitude: 1
 --- !u!114 &1757195136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2543,6 +2557,8 @@ MonoBehaviour:
   distanceMultiplier: 0
   centerObject: {fileID: 1253650891}
   maxDistanceToCenter: 0.8
+  shiftForce: 30
+  lineerForce: 1
 --- !u!4 &1853150437
 Transform:
   m_ObjectHideFlags: 0
