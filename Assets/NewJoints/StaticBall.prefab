@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 4451540343954759794}
   - component: {fileID: 2243166366473112003}
   - component: {fileID: 7537800899114952042}
-  - component: {fileID: 501705911106031122}
   m_Layer: 6
-  m_Name: Balls
+  m_Name: StaticBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,7 +131,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
@@ -140,19 +139,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 2
---- !u!114 &501705911106031122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5963396639859154223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fed0cb273d71404b900b4452039e29a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CenterPoint: {fileID: 0}
-  forceMagnitude: 300
-  impulseMagnitude: 100
-  jumpMagnitude: 10
