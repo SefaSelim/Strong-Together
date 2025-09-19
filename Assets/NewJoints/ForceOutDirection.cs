@@ -8,11 +8,12 @@ public class ForceOutDirection : MonoBehaviour
     [SerializeField] private float forceMagnitude = 10f;
     [SerializeField] private float impulseMagnitude = 5f;
     [SerializeField] private float jumpMagnitude = 1f;
-    
 
-    
-    Rigidbody rb;
+    private Rigidbody rb;
 
+    // input flagleri
+    private bool jumpPressed;
+    private bool holdSpace;
 
     private void Start()
     {
@@ -21,33 +22,43 @@ public class ForceOutDirection : MonoBehaviour
         {
             Debug.LogError("Rigidbody component not found on this GameObject.");
         }
-        
+
         CenterPoint = GameObject.FindWithTag("Center").transform;
     }
 
-    void Update()
+    private void Update()
     {
-        if(Physics.gravity.y > 0)
+        // Input sadece Update’te okunmalı (FPS bağımlı değil)
+        if (Input.GetKeyDown(KeyCode.Space) && SpheresManager.Instance.isGrounded)
         {
-            jumpMagnitude = Mathf.Abs(jumpMagnitude) * -1;
+            jumpPressed = true;
         }
-        else
-        {
-            jumpMagnitude = Mathf.Abs(jumpMagnitude);
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && SpheresManager.Instance.isGrounded)// isgroundedken calisacak
-        {
-            Vector3 direction = (transform.position - CenterPoint.position).normalized;
-            rb.AddForce(direction * impulseMagnitude, ForceMode.Impulse);
-            rb.AddForce(Vector3.up * jumpMagnitude ,ForceMode.Impulse);
-        }
-        
-        if (Input.GetKey(KeyCode.Space)) 
-        {
-            Vector3 direction = (transform.position - CenterPoint.position).normalized;
-            rb.AddForce(direction * forceMagnitude, ForceMode.Force);
 
+        holdSpace = Input.GetKey(KeyCode.Space);
+
+        // gravity yönüne göre jumpMagnitude ayarı
+        if (Physics.gravity.y > 0)
+            jumpMagnitude = -Mathf.Abs(jumpMagnitude);
+        else
+            jumpMagnitude = Mathf.Abs(jumpMagnitude);
+    }
+
+    private void FixedUpdate()
+    {
+        Vector3 direction = (transform.position - CenterPoint.position).normalized;
+
+        if (jumpPressed)
+        {
+            rb.AddForce(direction * impulseMagnitude, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * jumpMagnitude, ForceMode.Impulse);
+            jumpPressed = false; // resetle
+        }
+
+        if (holdSpace)
+        {
+            // ForceMode.Force zaten deltaTime ile çarpıyor,
+            // ama daha kontrollü olsun dersen sen de Time.fixedDeltaTime ile çarpabilirsin
+            rb.AddForce(direction * forceMagnitude, ForceMode.Force);
         }
     }
-    
 }

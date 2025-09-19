@@ -10,7 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1210031701600894666}
   - component: {fileID: 781974305081247255}
-  m_Layer: 0
+  - component: {fileID: 4913134293849907196}
+  - component: {fileID: 3868670031151780431}
+  - component: {fileID: 2454763262647116888}
+  m_Layer: 7
   m_Name: CenterForSpawn
   m_TagString: Center
   m_Icon: {fileID: 0}
@@ -45,6 +48,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentObjects: {fileID: 8245464375753174661}
+--- !u!135 &4913134293849907196
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856207737146374682}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.6
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3868670031151780431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856207737146374682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bd8220af5f249547bc8d7e22f01e14c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundCheck
+--- !u!54 &2454763262647116888
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4856207737146374682}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 0
+  m_AngularDamping: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5309294503052042433
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,3 +176,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0b293ad52709294dab9c254d00069fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGrounded: 0
