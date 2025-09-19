@@ -55,6 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8245464375753174661}
   - component: {fileID: 7983409373015998070}
+  - component: {fileID: 5499532565554401242}
   m_Layer: 0
   m_Name: Organiser
   m_TagString: Untagged
@@ -100,3 +101,15 @@ MonoBehaviour:
   maxDistanceToCenter: 400
   shiftForce: 50
   lineerForce: 15
+--- !u!114 &5499532565554401242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5309294503052042433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0b293ad52709294dab9c254d00069fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
