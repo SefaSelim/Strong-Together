@@ -6,10 +6,10 @@ PhysicsMaterial:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DynamicFriction
+  m_Name: Grounds
   serializedVersion: 2
-  m_DynamicFriction: 100
-  m_StaticFriction: 100
-  m_Bounciness: 0.3
-  m_FrictionCombine: 1
-  m_BounceCombine: 3
+  m_DynamicFriction: 1000
+  m_StaticFriction: 1000
+  m_Bounciness: 0
+  m_FrictionCombine: 3
+  m_BounceCombine: 0
