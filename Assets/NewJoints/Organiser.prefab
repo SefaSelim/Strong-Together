@@ -92,9 +92,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spherePrefab: {fileID: 5963396639859154223, guid: 2186d1bf850913e47ab3e039a5b3dde3, type: 3}
   numberOfSpheres: 10
-  radius: 0.25
-  spring: 600
-  damper: 30
+  radius: 0.3
+  spring: 300
+  damper: 25
   distanceMultiplier: 0
   centerObject: {fileID: 1210031701600894666}
   maxDistanceToCenter: 400
+  shiftForce: 50
+  lineerForce: 15

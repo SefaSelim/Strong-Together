@@ -6,6 +6,10 @@ public class ForceOutDirection : MonoBehaviour
     [SerializeField] private Transform CenterPoint;
     
     [SerializeField] private float forceMagnitude = 10f;
+    [SerializeField] private float impulseMagnitude = 5f;
+    [SerializeField] private float jumpMagnitude = 1f;
+    
+    
     Rigidbody rb;
 
 
@@ -22,17 +26,19 @@ public class ForceOutDirection : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))// isgroundedken calisacak
         {
             Vector3 direction = (transform.position - CenterPoint.position).normalized;
-            rb.AddForce(direction * forceMagnitude / 2, ForceMode.Impulse);
+            rb.AddForce(direction * impulseMagnitude, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * jumpMagnitude ,ForceMode.Impulse);
         }
         
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space)) 
         {
             Vector3 direction = (transform.position - CenterPoint.position).normalized;
             rb.AddForce(direction * forceMagnitude, ForceMode.Force);
-        }  
+
+        }
     }
     
 }
