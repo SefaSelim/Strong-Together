@@ -16,10 +16,18 @@ public class ForceOutDirection : MonoBehaviour
         {
             Debug.LogError("Rigidbody component not found on this GameObject.");
         }
+        
+        CenterPoint = GameObject.FindWithTag("Center").transform;
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Vector3 direction = (transform.position - CenterPoint.position).normalized;
+            rb.AddForce(direction * forceMagnitude / 2, ForceMode.Impulse);
+        }
+        
         if (Input.GetKey(KeyCode.Space))
         {
             Vector3 direction = (transform.position - CenterPoint.position).normalized;
