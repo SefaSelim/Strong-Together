@@ -92,6 +92,7 @@ public class CircleSpringSpawner3D_XY_Runtime : MonoBehaviour
             );
 
             GameObject sphere = Instantiate(spherePrefab, pos, Quaternion.identity, transform);
+            sphere.name = "Sphere_" + i;
 
             if (sphere.GetComponent<Rigidbody>() == null)
                 sphere.AddComponent<Rigidbody>();
@@ -149,5 +150,10 @@ public class CircleSpringSpawner3D_XY_Runtime : MonoBehaviour
                 }
             }
         }
+    }
+    
+    public List<GameObject> GetListOfSpheres()
+    {
+        return spawnedSpheres;
     }
 }
