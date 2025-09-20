@@ -2284,7 +2284,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575370073}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 54e650d0e0df56846852d80b81a43a39, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -5446,20 +5446,12 @@ MonoBehaviour:
   - id: 
     sphereRoot: {fileID: 0}
     renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    textures: []
     currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.12710404, b: 1, a: 0}
-    - {r: 0, g: 1, b: 0.13657355, a: 0}
+    colors: []
     currentColorIndex: 0
     materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    - {fileID: 2100000, guid: 3b5cc91c3bf8cf74391252247f52fb59, type: 2}
     currentMatIndex: 0
     materialElement: 0
     texturePropertyOverride: 
@@ -5488,15 +5480,9 @@ MonoBehaviour:
   - id: 
     sphereRoot: {fileID: 0}
     renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    textures: []
     currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.12710404, b: 1, a: 0}
-    - {r: 0, g: 1, b: 0.13657355, a: 0}
+    colors: []
     currentColorIndex: 0
     materials:
     - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
@@ -7869,6 +7855,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8245464375753174661, guid: 4da749de6c970bc409214184441373fa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155601857034552486, guid: 4da749de6c970bc409214184441373fa, type: 3}
+      propertyPath: camType
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
