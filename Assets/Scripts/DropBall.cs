@@ -36,15 +36,13 @@ public class CubeGroupTrigger : MonoBehaviour
  
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"Enter: {other.name}");
         if (IsAllowed(other))
             touching.Add(other);
     }
 
     private void OnTriggerExit(Collider other)
-    {
-        if (touching.Remove(other))
-            Debug.Log($"Exit: {other.name}");
+    { 
+        touching.Remove(other);
     }
 
   
