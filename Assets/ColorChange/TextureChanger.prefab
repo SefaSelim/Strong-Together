@@ -44,16 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2368de8b712edc8419c3ae275e9a6957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultTextures:
-  - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-  defaultColors:
-  - {r: 1, g: 0, b: 0.86353207, a: 0}
+  matchMode: 0
+  useTemplateIfNoMatch: 1
+  templateSlotIndex: 0
+  defaultTextures: []
+  defaultColors: []
   defaultMaterials:
   - {fileID: 2100000, guid: 8af2fb6e2354bc94cb6bf7d9e1c462aa, type: 2}
   applyInitialOnStart: 1
+  startWithFirstItem: 1
+  respectInspectorStartIndex: 0
   staggerInitialIndices: 0
-  useTemplateIfNoMatch: 1
-  templateSlotIndex: 0
   debugKeys: 1
   testTextureKey: 116
   testColorKey: 99
@@ -63,209 +64,15 @@ MonoBehaviour:
   - id: 
     sphereRoot: {fileID: 0}
     renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    textures: []
     currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.06900835, b: 1, a: 0}
-    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    colors: []
     currentColorIndex: 0
     materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.06900835, b: 1, a: 0}
-    - {r: 0.05281806, g: 1, b: 0, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.06900835, b: 1, a: 0}
-    - {r: 0.05281806, g: 1, b: 0, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.06900835, b: 1, a: 0}
-    - {r: 0.05281806, g: 1, b: 0, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.06900835, b: 1, a: 0}
-    - {r: 0.05281806, g: 1, b: 0, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.06900835, b: 1, a: 0}
-    - {r: 0.05281806, g: 1, b: 0, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.06900835, b: 1, a: 0}
-    - {r: 0.05281806, g: 1, b: 0, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.06900835, b: 1, a: 0}
-    - {r: 0.05281806, g: 1, b: 0, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.06900835, b: 1, a: 0}
-    - {r: 0.05281806, g: 1, b: 0, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.06900835, b: 1, a: 0}
-    - {r: 0.05281806, g: 1, b: 0, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    - {fileID: 2100000, guid: d27a6b731a947f040af528c51dba7cca, type: 2}
+    - {fileID: 2100000, guid: d4f360effbaeed24cbce20d18ea24aba, type: 2}
+    - {fileID: 2100000, guid: be5622c191bff594689e44ff3cde7c32, type: 2}
+    - {fileID: 2100000, guid: 8c6f6ac96ffd072438ac6a85f7b0215b, type: 2}
     currentMatIndex: 0
     materialElement: 0
     texturePropertyOverride: 
