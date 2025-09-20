@@ -9,6 +9,8 @@ public class CubeGroupTrigger : MonoBehaviour
 
     public GameObject prefab;
     public CircleSpringSpawner3D_XY_Runtime circleSpringSpawner3D_XY_Runtime;
+        public SpeechBubbleEvent myBubble; // Inspector’dan sürükle-bırak
+    public Transform targetSphere;     // Balonun takip edeceği küre
 
     private readonly HashSet<Collider> touching = new HashSet<Collider>();
     private Collider triggerCol;
@@ -93,6 +95,10 @@ public class CubeGroupTrigger : MonoBehaviour
                 // Spawn noktası
                 var spawnTf = groupRoot.GetChild(1);
                 Instantiate(prefab, spawnTf.position, spawnTf.rotation);
+                        myBubble.target = targetSphere;     // takip edilecek küre
+                 myBubble.message = "Merhaba dünya"; // Inspector’dan da yazabilirsin
+                    myBubble.TriggerShow();
+
 
                 droppedball++;
             }
