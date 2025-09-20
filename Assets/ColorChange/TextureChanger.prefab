@@ -1,0 +1,272 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3428042863640343791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3884346937211525734}
+  - component: {fileID: 3000390094876385330}
+  m_Layer: 0
+  m_Name: TextureChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3884346937211525734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3428042863640343791}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.393575, y: 0.07518646, z: -0.22801654}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3000390094876385330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3428042863640343791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2368de8b712edc8419c3ae275e9a6957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultTextures:
+  - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+  defaultColors:
+  - {r: 1, g: 0, b: 0.86353207, a: 0}
+  defaultMaterials:
+  - {fileID: 2100000, guid: 8af2fb6e2354bc94cb6bf7d9e1c462aa, type: 2}
+  applyInitialOnStart: 1
+  staggerInitialIndices: 0
+  useTemplateIfNoMatch: 1
+  templateSlotIndex: 0
+  debugKeys: 1
+  testTextureKey: 116
+  testColorKey: 99
+  testMaterialKey: 109
+  testAllKey: 32
+  spheres:
+  - id: 
+    sphereRoot: {fileID: 0}
+    renderers: []
+    textures:
+    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    currentTexIndex: 0
+    colors:
+    - {r: 1, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0.06900835, b: 1, a: 0}
+    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    currentColorIndex: 0
+    materials:
+    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    currentMatIndex: 0
+    materialElement: 0
+    texturePropertyOverride: 
+    colorPropertyOverride: 
+  - id: 
+    sphereRoot: {fileID: 0}
+    renderers: []
+    textures:
+    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    currentTexIndex: 0
+    colors:
+    - {r: 1, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0.06900835, b: 1, a: 0}
+    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    currentColorIndex: 0
+    materials:
+    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    currentMatIndex: 0
+    materialElement: 0
+    texturePropertyOverride: 
+    colorPropertyOverride: 
+  - id: 
+    sphereRoot: {fileID: 0}
+    renderers: []
+    textures:
+    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    currentTexIndex: 0
+    colors:
+    - {r: 1, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0.06900835, b: 1, a: 0}
+    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    currentColorIndex: 0
+    materials:
+    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    currentMatIndex: 0
+    materialElement: 0
+    texturePropertyOverride: 
+    colorPropertyOverride: 
+  - id: 
+    sphereRoot: {fileID: 0}
+    renderers: []
+    textures:
+    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    currentTexIndex: 0
+    colors:
+    - {r: 1, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0.06900835, b: 1, a: 0}
+    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    currentColorIndex: 0
+    materials:
+    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    currentMatIndex: 0
+    materialElement: 0
+    texturePropertyOverride: 
+    colorPropertyOverride: 
+  - id: 
+    sphereRoot: {fileID: 0}
+    renderers: []
+    textures:
+    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    currentTexIndex: 0
+    colors:
+    - {r: 1, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0.06900835, b: 1, a: 0}
+    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    currentColorIndex: 0
+    materials:
+    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    currentMatIndex: 0
+    materialElement: 0
+    texturePropertyOverride: 
+    colorPropertyOverride: 
+  - id: 
+    sphereRoot: {fileID: 0}
+    renderers: []
+    textures:
+    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    currentTexIndex: 0
+    colors:
+    - {r: 1, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0.06900835, b: 1, a: 0}
+    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    currentColorIndex: 0
+    materials:
+    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    currentMatIndex: 0
+    materialElement: 0
+    texturePropertyOverride: 
+    colorPropertyOverride: 
+  - id: 
+    sphereRoot: {fileID: 0}
+    renderers: []
+    textures:
+    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    currentTexIndex: 0
+    colors:
+    - {r: 1, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0.06900835, b: 1, a: 0}
+    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    currentColorIndex: 0
+    materials:
+    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    currentMatIndex: 0
+    materialElement: 0
+    texturePropertyOverride: 
+    colorPropertyOverride: 
+  - id: 
+    sphereRoot: {fileID: 0}
+    renderers: []
+    textures:
+    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    currentTexIndex: 0
+    colors:
+    - {r: 1, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0.06900835, b: 1, a: 0}
+    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    currentColorIndex: 0
+    materials:
+    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    currentMatIndex: 0
+    materialElement: 0
+    texturePropertyOverride: 
+    colorPropertyOverride: 
+  - id: 
+    sphereRoot: {fileID: 0}
+    renderers: []
+    textures:
+    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    currentTexIndex: 0
+    colors:
+    - {r: 1, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0.06900835, b: 1, a: 0}
+    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    currentColorIndex: 0
+    materials:
+    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    currentMatIndex: 0
+    materialElement: 0
+    texturePropertyOverride: 
+    colorPropertyOverride: 
+  - id: 
+    sphereRoot: {fileID: 0}
+    renderers: []
+    textures:
+    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    currentTexIndex: 0
+    colors:
+    - {r: 1, g: 0, b: 0, a: 0}
+    - {r: 0, g: 0.06900835, b: 1, a: 0}
+    - {r: 0.05281806, g: 1, b: 0, a: 0}
+    currentColorIndex: 0
+    materials:
+    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
+    currentMatIndex: 0
+    materialElement: 0
+    texturePropertyOverride: 
+    colorPropertyOverride: 

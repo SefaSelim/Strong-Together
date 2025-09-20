@@ -5,7 +5,7 @@ public class CenterOfMassFollowerAuto : MonoBehaviour
     [Header("Parent objesi, altındaki tüm objeler COM için kullanılacak")]
     public Transform parentObjects;
 
-    void Update()
+    void FixedUpdate()
     {
         if (parentObjects == null || parentObjects.childCount == 0) return;
 

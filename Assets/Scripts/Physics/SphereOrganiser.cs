@@ -132,10 +132,6 @@ public class CircleSpringSpawner3D_XY_Runtime : MonoBehaviour
             
             sphere.GetComponent<Rigidbody>().mass = 5f;
 
-            LimitDistanceToCenter ldc = sphere.AddComponent<LimitDistanceToCenter>();
-            ldc.centerObject = centerObject != null ? centerObject : this.transform;
-            ldc.maxDistance = maxDistanceToCenter;
-
             spawnedSpheres.Add(sphere);
         }
 
