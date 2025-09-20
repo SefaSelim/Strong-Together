@@ -5398,262 +5398,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a1536b8a02f8d041a6732fe5b6168a4, type: 3}
   m_PrefabInstance: {fileID: 1855986618}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1517308969
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1517308971}
-  - component: {fileID: 1517308970}
-  m_Layer: 0
-  m_Name: TextureChanger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1517308970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517308969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2368de8b712edc8419c3ae275e9a6957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PerSphereTextureSwapper_FromList
-  matchMode: 0
-  useTemplateIfNoMatch: 0
-  templateSlotIndex: 0
-  defaultTextures: []
-  defaultColors: []
-  defaultMaterials: []
-  applyInitialOnStart: 1
-  startWithFirstItem: 1
-  respectInspectorStartIndex: 0
-  staggerInitialIndices: 0
-  debugKeys: 1
-  testTextureKey: 116
-  testColorKey: 99
-  testMaterialKey: 109
-  testAllKey: 32
-  spheres:
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures: []
-    currentTexIndex: 0
-    colors: []
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3b5cc91c3bf8cf74391252247f52fb59, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.12710404, b: 1, a: 0}
-    - {r: 0, g: 1, b: 0.13657355, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures: []
-    currentTexIndex: 0
-    colors: []
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.12710404, b: 1, a: 0}
-    - {r: 0, g: 1, b: 0.13657355, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.12710404, b: 1, a: 0}
-    - {r: 0, g: 1, b: 0.13657355, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.12710404, b: 1, a: 0}
-    - {r: 0, g: 1, b: 0.13657355, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.12710404, b: 1, a: 0}
-    - {r: 0, g: 1, b: 0.13657355, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.12710404, b: 1, a: 0}
-    - {r: 0, g: 1, b: 0.13657355, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.12710404, b: 1, a: 0}
-    - {r: 0, g: 1, b: 0.13657355, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
-  - id: 
-    sphereRoot: {fileID: 0}
-    renderers: []
-    textures:
-    - {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
-    - {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
-    - {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
-    currentTexIndex: 0
-    colors:
-    - {r: 1, g: 0, b: 0, a: 0}
-    - {r: 0, g: 0.12710404, b: 1, a: 0}
-    - {r: 0, g: 1, b: 0.13657355, a: 0}
-    currentColorIndex: 0
-    materials:
-    - {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
-    - {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
-    - {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
-    currentMatIndex: 0
-    materialElement: 0
-    texturePropertyOverride: 
-    colorPropertyOverride: 
---- !u!4 &1517308971
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517308969}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -183.17549, y: 0.32599, z: 1.6354}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1545741870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 849fbf4fdb21ab542b93d318cfc23ffd, type: 3}
@@ -7724,6 +7468,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a1536b8a02f8d041a6732fe5b6168a4, type: 3}
   m_PrefabInstance: {fileID: 34599237}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1969987545
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3428042863640343791, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_Name
+      value: TextureChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884346937211525734, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.50401
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884346937211525734, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884346937211525734, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.25583
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884346937211525734, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884346937211525734, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884346937211525734, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884346937211525734, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884346937211525734, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884346937211525734, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884346937211525734, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
 --- !u!1001 &2001686067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8102,4 +7903,4 @@ SceneRoots:
   - {fileID: 786241039}
   - {fileID: 635809727}
   - {fileID: 2021657380}
-  - {fileID: 1517308971}
+  - {fileID: 1969987545}
