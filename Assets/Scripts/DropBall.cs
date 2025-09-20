@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,14 +7,18 @@ public class CubeGroupTrigger : MonoBehaviour
     [SerializeField] int MaxDropBallNumber = 1;            // int kullan
     [Header("Temas kontrolü yapılacak kök (altındaki TÜM collider'lar geçerli sayılır)")]
     [SerializeField] private Transform groupRoot;
-
+     public GameObject bubbleCanvasPrefab;   
     public GameObject prefab;
     public CircleSpringSpawner3D_XY_Runtime circleSpringSpawner3D_XY_Runtime;
-        public SpeechBubbleEvent myBubble; // Inspector’dan sürükle-bırak
+
+    public List<String> strings = new List<String>();
+    
+
     public Transform targetSphere;     // Balonun takip edeceği küre
 
     private readonly HashSet<Collider> touching = new HashSet<Collider>();
     private Collider triggerCol;
+    public GameObject Center;
     private int droppedball = 0;
     private bool isfinished = false;
 
@@ -93,12 +98,18 @@ public class CubeGroupTrigger : MonoBehaviour
                         Mathf.Max(0, circleSpringSpawner3D_XY_Runtime.numberOfSpheres - 1);
 
                 // Spawn noktası
-                var spawnTf = groupRoot.GetChild(1);
-                Instantiate(prefab, spawnTf.position, spawnTf.rotation);
-                        myBubble.target = targetSphere;     // takip edilecek küre
-                 myBubble.message = "Merhaba dünya"; // Inspector’dan da yazabilirsin
-                    myBubble.TriggerShow();
-
+                var spawnedsphere = Instantiate(prefab,new Vector3(Center.transform.position.x, Center.transform.position.y,Center.transform.position.z), Center.transform.rotation);
+                var bubbleGO = Instantiate(bubbleCanvasPrefab, spawnedsphere.transform, false);
+                var rt = bubbleGO.GetComponent<RectTransform>();
+                
+                bubbleGO.transform.localScale = Vector3.one * 4f; 
+    // İstersen yerel offset ver
+                bubbleGO.transform.localPosition = new Vector3(0f, 0f, 0f);
+                
+    // Mesajı tetikle
+                var bubble = bubbleGO.GetComponent<SpeechBubbleEvent>();
+             if (bubble != null)
+              bubble.ShowFor(spawnedsphere.transform, strings[0+droppedball], Camera.main);
 
                 droppedball++;
             }
