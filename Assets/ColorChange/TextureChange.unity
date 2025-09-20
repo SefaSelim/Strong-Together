@@ -639,6 +639,126 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: defaultColors.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: defaultTextures.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].colors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].textures.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].materials.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].colors.Array.data[0].b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].colors.Array.data[0].g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].colors.Array.data[0].r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].colors.Array.data[1].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].colors.Array.data[1].g
+      value: 0.253716
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].colors.Array.data[1].r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].colors.Array.data[2].b
+      value: 0.22515607
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].colors.Array.data[2].g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[0].colors.Array.data[2].r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: 'spheres.Array.data[0].textures.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: 'spheres.Array.data[0].textures.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 971e5361fb92e5a429b0f06ab7535c1b, type: 3}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: 'spheres.Array.data[0].textures.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 2f79731f969b1a841bdedf96c96fd23b, type: 3}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[1].colors.Array.data[0].b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[1].colors.Array.data[0].g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[1].colors.Array.data[0].r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[1].colors.Array.data[1].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[1].colors.Array.data[1].g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[1].colors.Array.data[1].r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[1].colors.Array.data[2].b
+      value: 0.0816164
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[1].colors.Array.data[2].g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: spheres.Array.data[1].colors.Array.data[2].r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: 'spheres.Array.data[2].textures.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2800000, guid: 3fa69f1055b8bd846b19fa581a3e4754, type: 3}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: 'spheres.Array.data[0].materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 3858a1b15ff2cc744993528e85cd0b94, type: 2}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: 'spheres.Array.data[0].materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f96d2f748c32474584084cd121cadbe, type: 2}
+    - target: {fileID: 3000390094876385330, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
+      propertyPath: 'spheres.Array.data[0].materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ec1d96bfffadc0d409ba2c194c686f1e, type: 2}
     - target: {fileID: 3428042863640343791, guid: 0b2e2417e588cda4aa3a99c29ecb4ee5, type: 3}
       propertyPath: m_Name
       value: TextureChanger

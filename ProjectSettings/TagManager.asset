@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Center
   - CanDropBall
+  - Balls
   layers:
   - Default
   - TransparentFX
