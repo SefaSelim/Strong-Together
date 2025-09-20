@@ -14,8 +14,11 @@ public class CenterOfMassFollowerAuto : MonoBehaviour
 
         foreach (Transform child in parentObjects)
         {
-            com += child.position;
-            count++;
+            if (child.CompareTag("Balls"))
+            {
+                com += child.position;
+                count++;
+            }
         }
 
         if (count > 0)
