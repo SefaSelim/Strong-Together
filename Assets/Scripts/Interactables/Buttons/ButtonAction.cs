@@ -10,17 +10,14 @@ public class ButtonAction : MonoBehaviour
     public void ButtonPressed()
     {
         onButtonPressed?.Invoke();
-        print("pressed");
     }
     public void ButtonStay()
     {
         onButtonStay?.Invoke();
-        print("stay");
     }
     public void ButtonReleased()
     {
         onButtonReleased?.Invoke();
-        print("released");
     }
     
 }
