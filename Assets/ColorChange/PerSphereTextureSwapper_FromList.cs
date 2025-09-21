@@ -27,13 +27,13 @@ public class PerSphereTextureSwapper_FromList : MonoBehaviour
     [SerializeField] KeyCode testTextureKey = KeyCode.T;
     [SerializeField] KeyCode testColorKey = KeyCode.C;
     [SerializeField] KeyCode testMaterialKey = KeyCode.M;
-    [SerializeField] KeyCode testAllKey = KeyCode.Space;
+   // [SerializeField] KeyCode testAllKey = KeyCode.Space;
 
     [Serializable]
     public class SphereSlot
     {
-        public string id;                    // ByName için
-        public GameObject sphereRoot;        // runtime baðlanýr
+        public string id;                 // ByName için
+        public GameObject sphereRoot;     // runtime baðlanýr
         public List<Renderer> renderers = new();
 
         [Header("Opsiyonel sýra listeleri (boþsa defaults kullanýlýr)")]
@@ -70,7 +70,7 @@ public class PerSphereTextureSwapper_FromList : MonoBehaviour
         if (Input.GetKeyDown(testTextureKey)) NextAllTextures();
         if (Input.GetKeyDown(testColorKey)) NextAllColors();
         if (Input.GetKeyDown(testMaterialKey)) NextAllMaterials(true);
-        if (Input.GetKeyDown(testAllKey)) CycleAll();
+       // if (Input.GetKeyDown(testAllKey)) CycleAll();
     }
 
     // -------- Toplama (EÞLEÞTÝRME) --------
@@ -110,7 +110,6 @@ public class PerSphereTextureSwapper_FromList : MonoBehaviour
                     break;
 
                 case MatchMode.ByName:
-                    // önce isimle, yoksa index fallback
                     if (!oldByName.TryGetValue(go.name, out slot) && i < spheres.Count) slot = spheres[i];
                     break;
 
@@ -262,13 +261,68 @@ public class PerSphereTextureSwapper_FromList : MonoBehaviour
     // -------- Public API --------
     public void SetOneTexture(int i, Texture tex) { if (ValidSphere(i)) SetTexture(spheres[i], tex); }
     public void NextOneTexture(int i) { if (!ValidSphere(i)) return; var s = spheres[i]; if (s.textures.Count == 0) return; s.currentTexIndex = (s.currentTexIndex + 1) % s.textures.Count; SetTexture(s, s.textures[s.currentTexIndex]); }
+
     public void SetOneColor(int i, Color col) { if (ValidSphere(i)) SetColor(spheres[i], col); }
     public void NextOneColor(int i) { if (!ValidSphere(i)) return; var s = spheres[i]; if (s.colors.Count == 0) return; s.currentColorIndex = (s.currentColorIndex + 1) % s.colors.Count; SetColor(s, s.colors[s.currentColorIndex]); }
-    public void ApplyMaterial(int i, int mIdx, bool reapplyProps = true) { if (!ValidSphere(i)) return; var s = spheres[i]; if (s.materials.Count == 0) return; s.currentMatIndex = Mathf.Clamp(mIdx, 0, s.materials.Count - 1); SetMaterial(s, s.materials[s.currentMatIndex], reapplyProps); }
-    public void NextOneMaterial(int i, bool reapplyProps = true) { if (!ValidSphere(i)) return; var s = spheres[i]; if (s.materials.Count == 0) return; s.currentMatIndex = (s.currentMatIndex + 1) % s.materials.Count; SetMaterial(s, s.materials[s.currentMatIndex], reapplyProps); }
+
+    public void ApplyMaterial(int i, int mIdx, bool reapplyProps = true)
+    { if (!ValidSphere(i)) return; var s = spheres[i]; if (s.materials.Count == 0) return; s.currentMatIndex = Mathf.Clamp(mIdx, 0, s.materials.Count - 1); SetMaterial(s, s.materials[s.currentMatIndex], reapplyProps); }
+    public void NextOneMaterial(int i, bool reapplyProps = true)
+    { if (!ValidSphere(i)) return; var s = spheres[i]; if (s.materials.Count == 0) return; s.currentMatIndex = (s.currentMatIndex + 1) % s.materials.Count; SetMaterial(s, s.materials[s.currentMatIndex], reapplyProps); }
 
     public void NextAllTextures() { for (int i = 0; i < spheres.Count; i++) NextOneTexture(i); }
     public void NextAllColors() { for (int i = 0; i < spheres.Count; i++) NextOneColor(i); }
     public void NextAllMaterials(bool reapplyProps = true) { for (int i = 0; i < spheres.Count; i++) NextOneMaterial(i, reapplyProps); }
     public void CycleAll() { NextAllTextures(); NextAllColors(); NextAllMaterials(true); }
+
+    // ====== Yeni API’ler (Enemy temas senaryosu için) ======
+    public void SetAllMaterial(Material mat, bool reapplyProps = true)
+    {
+        if (mat == null) return;
+        for (int i = 0; i < spheres.Count; i++)
+            SetMaterial(spheres[i], mat, reapplyProps);
+    }
+    public void SetOneMaterialAsset(int sphereIndex, Material mat, bool reapplyProps = true)
+    {
+        if (!ValidSphere(sphereIndex) || mat == null) return;
+        SetMaterial(spheres[sphereIndex], mat, reapplyProps);
+    }
+    public int SphereCount => spheres.Count;
+
+    public Material GetCurrentMaterialAsset(int sphereIndex)
+    {
+        if (!ValidSphere(sphereIndex)) return null;
+        var s = spheres[sphereIndex];
+        if (s.renderers == null || s.renderers.Count == 0) return null;
+        return GetMaterialAt(s.renderers[0], s.materialElement);
+    }
+    public int GetCurrentMaterialIndex(int sphereIndex)
+    {
+        if (!ValidSphere(sphereIndex)) return -1;
+        return spheres[sphereIndex].currentMatIndex;
+    }
+
+    public int FindSphereIndexByTransform(Transform t, int maxHops = 8)
+    {
+        if (t == null) return -1;
+
+        // 1) Doðrudan çocuk/ayný mý?
+        for (int i = 0; i < spheres.Count; i++)
+        {
+            var root = spheres[i].sphereRoot ? spheres[i].sphereRoot.transform : null;
+            if (root == null) continue;
+            if (t == root || t.IsChildOf(root)) return i;
+        }
+        // 2) Yukarý týrmanarak köke bak
+        var p = t;
+        for (int h = 0; h < maxHops && p != null; h++, p = p.parent)
+        {
+            for (int i = 0; i < spheres.Count; i++)
+            {
+                var root = spheres[i].sphereRoot ? spheres[i].sphereRoot.transform : null;
+                if (root != null && p == root) return i;
+            }
+        }
+        return -1;
+    }
 }

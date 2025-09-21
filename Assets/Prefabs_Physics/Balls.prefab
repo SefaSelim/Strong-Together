@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2243166366473112003}
   - component: {fileID: 7537800899114952042}
   - component: {fileID: 501705911106031122}
+  - component: {fileID: -3228745025798328319}
   m_Layer: 6
   m_Name: Balls
   m_TagString: Balls
@@ -99,6 +100,26 @@ MonoBehaviour:
   forceMagnitude: 800
   impulseMagnitude: 110
   jumpMagnitude: 10
+--- !u!114 &-3228745025798328319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5963396639859154223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcc296824897ef74c959cefa2b4f34ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OnEnemyTouchSwapMaterial
+  enemyTag: Enemy
+  useTrigger: 1
+  swapper: {fileID: 0}
+  affectAllSpheres: 0
+  autoDetectSphereIndex: 1
+  targetSphereIndex: 0
+  materialOnHit: {fileID: 2100000, guid: 8c6f6ac96ffd072438ac6a85f7b0215b, type: 2}
+  reapplyProps: 1
 --- !u!1001 &3666416649967132528
 PrefabInstance:
   m_ObjectHideFlags: 0
