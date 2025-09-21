@@ -277,8 +277,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8579059914392205722, guid: 2151af0e4b53e364ea069d0936280c79, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4164952371526941445}
+    - targetCorrespondingSourceObject: {fileID: 8579059914392205722, guid: 2151af0e4b53e364ea069d0936280c79, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8240230844074849702}
   m_SourcePrefab: {fileID: 100100000, guid: 2151af0e4b53e364ea069d0936280c79, type: 3}
+--- !u!1 &1147220927534079589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8579059914392205722, guid: 2151af0e4b53e364ea069d0936280c79, type: 3}
+  m_PrefabInstance: {fileID: 8711455723046037503}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4164952371526941445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147220927534079589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineBasicMultiChannelPerlin
+  NoiseProfile: {fileID: 11400000, guid: e9ce97b7a206dc64d90931ea044e0c72, type: 2}
+  PivotOffset: {x: 0, y: 0, z: 0}
+  AmplitudeGain: 0
+  FrequencyGain: 1
+  m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!114 &8240230844074849702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147220927534079589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73056ee61a60d1a48b528f8cd275edb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenShake
+  shakeIntensity: 1
+  shakeDuration: 0.1
 --- !u!4 &3425405716588567425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6299465551037693054, guid: 2151af0e4b53e364ea069d0936280c79, type: 3}
