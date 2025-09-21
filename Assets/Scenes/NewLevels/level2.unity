@@ -1752,6 +1752,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.042
       objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MaxDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MinDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6007802891617262576, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -5494,7 +5506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 01ac93eb6bab432448bc176cabb01a5b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 151.9
+      value: 133.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 01ac93eb6bab432448bc176cabb01a5b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5633,6 +5645,18 @@ PrefabInstance:
     - target: {fileID: 4226362226636153701, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MaxDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MinDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5990029642966439665, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
       propertyPath: speed
@@ -7466,6 +7490,18 @@ PrefabInstance:
     - target: {fileID: 4226362226636153701, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MaxDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MinDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5990029642966439665, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
       propertyPath: speed
@@ -10439,6 +10475,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.255
       objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MaxDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MinDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5990029642966439665, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
       propertyPath: speed
       value: 4
@@ -12697,6 +12745,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.042
       objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MaxDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MinDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6007802891617262576, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -12780,6 +12840,18 @@ PrefabInstance:
     - target: {fileID: 4226362226636153701, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.042
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MaxDistance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: MinDistance
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351546526250981976, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6007802891617262576, guid: a85b9243eaec72540920ac7ac2d284a9, type: 3}
       propertyPath: m_IsTrigger
@@ -13043,7 +13115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8245464375753174661, guid: 4da749de6c970bc409214184441373fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 173.5
+      value: 339.72
       objectReference: {fileID: 0}
     - target: {fileID: 8245464375753174661, guid: 4da749de6c970bc409214184441373fa, type: 3}
       propertyPath: m_LocalPosition.y
