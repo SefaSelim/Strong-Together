@@ -140,7 +140,7 @@ Material:
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SoftParticlesEnabled: 1
-    - _SoftParticlesFarFadeDistance: 7
+    - _SoftParticlesFarFadeDistance: 15
     - _SoftParticlesNearFadeDistance: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 5
@@ -150,12 +150,12 @@ Material:
     - _XRMotionVectorsPass: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.21568628, g: 0.25673777, b: 0.28235295, a: 1}
+    - _BaseColor: {r: 0.24452654, g: 0.29514506, b: 0.3301887, a: 1}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.2156862, g: 0.25673774, b: 0.28235292, a: 1}
+    - _Color: {r: 0.2445265, g: 0.29514503, b: 0.33018863, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SoftParticleFadeParams: {r: 0, g: 0.14285715, b: 0, a: 0}
+    - _SoftParticleFadeParams: {r: 0, g: 0.06666667, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
