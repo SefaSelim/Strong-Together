@@ -7,7 +7,7 @@ public class DoorRotator : MonoBehaviour
     public float closedAngle = 0f;
     [Tooltip("Kapının açık hedef açısı (örn. 90)")]
     public float openAngle = 90f;
-
+    
     [Header("Motion")]
     [Tooltip("Derece/saniye")]
     public float speed = 90f;
@@ -15,7 +15,8 @@ public class DoorRotator : MonoBehaviour
     public Transform hinge;
 
     float _targetAngle;
-
+    public GameObject greenLight;
+    public GameObject redLight;
     void Awake()
     {
         if (hinge == null) hinge = transform;
@@ -26,8 +27,17 @@ public class DoorRotator : MonoBehaviour
         hinge.localEulerAngles = e;
     }
 
-    public void Open()  { _targetAngle = openAngle;  }
-    public void Close() { _targetAngle = closedAngle; }
+    public void Open()
+    {
+        _targetAngle = openAngle;
+        redLight.SetActive(false);
+        greenLight.SetActive(true);
+     }
+    public void Close()
+    {
+        _targetAngle = closedAngle;
+         redLight.SetActive(true);
+        greenLight.SetActive(false); }
 
     void Update()
     {
